@@ -5,18 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/05/01 10:37:23 by adjelili          #+#    #+#              #
-#    Updated: 2026/05/01 11:29:31 by adjelili         ###   ########.fr        #
+#    Created: 2026/05/01 11:42:51 by adjelili          #+#    #+#              #
+#    Updated: 2026/05/01 11:43:50 by adjelili         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra
-NAME = zombie
+NAME = moarbrainz
 SRC = main.cpp \
       Zombie.cpp \
-	  newZombie.cpp \
-	  randomChump.cpp
+	  zombieHorde.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

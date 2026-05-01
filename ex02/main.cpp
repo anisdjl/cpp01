@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/01 10:43:41 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/01 11:22:35 by adjelili         ###   ########.fr       */
+/*   Created: 2026/05/01 12:16:17 by adjelili          #+#    #+#             */
+/*   Updated: 2026/05/01 12:29:51 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-
-void	randomChump(std::string name)
+int main(void)
 {
-	Zombie new_zombie(name);
-	new_zombie.announce();
+	std::string	string = "HI THIS IS BRAIN";
+	std::string *stringPTR = &string;
+	std::string	&stringREF = string;
+	
+	std::cout << &string << "\n";
+	std::cout << stringPTR << "\n";
+	std::cout << &stringREF << "\n";
+
+	std::cout << string << "\n";
+	std::cout << *stringPTR << "\n";
+	std::cout << stringREF << "\n";
+	
+	return (0);
 }

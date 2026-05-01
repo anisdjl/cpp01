@@ -1,20 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/01 10:43:41 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/01 11:22:35 by adjelili         ###   ########.fr       */
+/*   Created: 2026/05/01 12:38:04 by adjelili          #+#    #+#             */
+/*   Updated: 2026/05/01 12:38:04 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-
-
-void	randomChump(std::string name)
-{
-	Zombie new_zombie(name);
-	new_zombie.announce();
-}
