@@ -6,13 +6,13 @@
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 12:38:02 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/01 18:44:45 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/01 19:43:59 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-std::string	&Weapon::getType(void)
+const std::string	&Weapon::getType(void) const
 {
 	return (_type);
 }

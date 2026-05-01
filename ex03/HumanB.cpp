@@ -6,7 +6,7 @@
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 12:37:51 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/01 19:21:01 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/01 19:46:18 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ HumanB::HumanB(std::string name)
 
 HumanB::~HumanB(void)
 {
-	std::cout << "HumanB's Destructor for human b called\n";
+	std::cout << "HumanB's Destructor called\n";
 }
 
 void	HumanB::attack(void)
