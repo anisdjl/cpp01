@@ -6,12 +6,12 @@
 #    By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/01 12:29:57 by adjelili          #+#    #+#              #
-#    Updated: 2026/05/01 12:30:19 by adjelili         ###   ########.fr        #
+#    Updated: 2026/05/02 15:43:51 by adjelili         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 NAME = moarbrainz
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)

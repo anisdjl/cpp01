@@ -5,18 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/05/01 10:37:23 by adjelili          #+#    #+#              #
-#    Updated: 2026/05/02 15:44:03 by adjelili         ###   ########.fr        #
+#    Created: 2026/05/02 15:35:03 by adjelili          #+#    #+#              #
+#    Updated: 2026/05/02 15:58:39 by adjelili         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
-NAME = zombie
+NAME = harl
 SRC = main.cpp \
-      Zombie.cpp \
-	  newZombie.cpp \
-	  randomChump.cpp
+	  Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
