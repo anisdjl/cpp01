@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
+/*   By: anis <anis@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 15:33:31 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/02 16:50:30 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/02 22:53:59 by anis             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	Harl::info(void)
 
 void	Harl::error(void)
 {
-	std::cout << "his is unacceptable! I want to speak to the manager now.\n";
+	std::cout << "This is unacceptable! I want to speak to the manager now.\n";
 }
 
 void	Harl::complain(std::string level)
