@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
+/*   By: anis <anis@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 16:54:01 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/02 16:59:55 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/03 19:00:04 by anis             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,13 @@
 
 #include <iostream>
 #include <string>
+
+class Harl
+{
+	private:
+
+	public:
+	
+};
 
 #endif
