@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anis <anis@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 15:33:31 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/02 22:53:59 by anis             ###   ########.fr       */
+/*   Updated: 2026/05/12 15:14:48 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	Harl::complain(std::string level)
 {
 	typedef void	(Harl::*ptr)(void);
 	ptr functions[] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	
+
 	std::string	tab[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	for (int i = 0; i < 4; i++)
 	{
