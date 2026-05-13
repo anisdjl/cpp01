@@ -6,7 +6,7 @@
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 12:37:48 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/01 19:29:37 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/13 13:47:27 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ class HumanB
 {
 	public:
 		void	attack();
-		void	setWeapon(Weapon &weapon); // celle la va assigner un pointeur vers le weapon cree dans le main
+		void	setWeapon(Weapon &weapon);
 		HumanB(std::string name);
 		~HumanB(void);
 	private:
-		Weapon	*_weaponB; // un pointeur cette fois si donc pas besoin de le set des le debut (car le b n'as pas automatiquement une arme)
+		Weapon	*_weaponB;
 		std::string	_name;
 };
 
