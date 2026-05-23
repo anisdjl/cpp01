@@ -6,14 +6,15 @@
 #    By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/02 16:53:20 by adjelili          #+#    #+#              #
-#    Updated: 2026/05/02 16:53:50 by adjelili         ###   ########.fr        #
+#    Updated: 2026/05/23 16:06:42 by adjelili         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 NAME = harlFilter
-SRC = main.cpp
+SRC = main.cpp \
+	  Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

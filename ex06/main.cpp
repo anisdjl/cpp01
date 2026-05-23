@@ -6,7 +6,7 @@
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 16:53:07 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/13 14:10:21 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/23 16:06:15 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	std::string input = argv[1];
 	std::string	levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int			index;
-
+	Harl	my_harl = Harl();
 	for (int i = 0; i < 4; i++)
 	{
 		if (levels[i] == input)
@@ -37,16 +37,20 @@ int main(int argc, char *argv[])
 	{
 		case 0:
 			std::cout << "[DEBUG]\n";
-			std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger.\nI really do!\n\n";
+			my_harl.complain("DEBUG");
+			// fall through
 		case 1:
 			std::cout << "[INFO]\n";
-			std::cout << "I cannot believe adding extra bacon costs more money.\nYou didn't put enough bacon in my burger! If you did, I wouldn't be asking for more!\n\n";
+			my_harl.complain("INFO");
+			// fall through
 		case 2:
 			std::cout << "[WARNING]\n";
-			std::cout << "I think I deserve to have some extra bacon for free.\nI've been coming for years, whereas you started working here just last month.\n\n";
+			my_harl.complain("WARNING");
+			// fall through
 		case 3:
 			std::cout << "[ERROR]\n";
-			std::cout << "This is unacceptable! I want to speak to the manager now.\n\n";
+			my_harl.complain("ERROR");
+			// fall through
 		default:
 			std::cout << "[ Probably complaining about insignificant problems ]\n";
 	}

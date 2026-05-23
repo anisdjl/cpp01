@@ -6,7 +6,7 @@
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 21:53:22 by anis              #+#    #+#             */
-/*   Updated: 2026/05/02 15:25:58 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/23 16:10:39 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ int main(int argc, char *argv[])
 	}
 	std::string	outfile_name = filename + ".replace";
 	std::string line;
-	std::ifstream	infile(filename);
+	std::ifstream	infile(filename.c_str());
 	if (!infile.is_open())
 	{
 		std::cerr << "Error while opening the file: bad permission or no such file\n";
 		return (1);
 	}
-	std::ofstream	outfile(outfile_name);
+	std::ofstream	outfile(outfile_name.c_str());
 	while (getline(infile, line))
 	{
 		algo(line, s1, s2);
