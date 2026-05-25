@@ -6,7 +6,7 @@
 /*   By: adjelili <adjelili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 16:53:07 by adjelili          #+#    #+#             */
-/*   Updated: 2026/05/23 16:06:15 by adjelili         ###   ########.fr       */
+/*   Updated: 2026/05/25 12:05:26 by adjelili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,9 @@ int main(int argc, char *argv[])
 			std::cout << "[ERROR]\n";
 			my_harl.complain("ERROR");
 			// fall through
+			break;
 		default:
 			std::cout << "[ Probably complaining about insignificant problems ]\n";
+			break;
 	}
 }
